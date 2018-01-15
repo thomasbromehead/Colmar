@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="27px" height="27px" version="1.1">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_onCampus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+            <feOffset result="shadowOffsetOuter1" in="SourceAlpha" dx="0" dy="2" />
+            <feGaussianBlur result="shadowBlurOuter1" in="shadowOffsetOuter1" stdDeviation="2" />
+            <feColorMatrix result="shadowMatrixOuter1" in="shadowBlurOuter1" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="OPt-2" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <g id="prog2_pro3_Mobile-Portrait_opt2-Copy-2" fill="#000000" transform="translate(-93 -18)">
+            <g id="nav">
+                <g id="Group-6" filter="url(&quot;#filter-1&quot;)">
+                    <g id="ic_onCampus" transform="translate(96 20)">
+                        <path id="Shape" d="M 20 2 L 20 4 L 15 4 L 11.53 9 L 14 9 L 14 11 L 12.46 11 L 16.17 19 L 13.97 19 L 13.04 17 L 4.38 17 L 3.35 19 L 1.1 19 L 5.23 11 L 5 11 C 4.55 11 4.17 10.7 4.04 10.3 L 0.87 0.84 L 1.82 0.5 C 2.34 0.34 2.91 0.63 3.08 1.15 L 5.72 9 L 10.1 9 L 13.57 4 L 10 4 L 10 2 L 20 2 L 20 2 Z M 7.5 11 L 5.42 15 L 12.11 15 L 10.26 11 L 7.5 11 Z" />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
