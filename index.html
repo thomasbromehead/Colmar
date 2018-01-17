@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <link href="Resources/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Oswald:400,700" rel="stylesheet">
     <title>Colmar Academy</title>
     
     <body>
@@ -25,7 +26,12 @@
           </div>
           
 <!--            MOBILE NAV             -->
-           
+           <div id="mobile-menu">
+              <img src="images/ic-logo.svg">
+              <img src="images/ic-on-campus.svg">
+              <img src="images/ic-online.svg">
+              <img src="images/ic-login.svg">               
+           </div>
            
             
         </header>
@@ -37,7 +43,7 @@
        <img src="images/banner.jpg">
         </div>
        <div class="info">
-           <h1>Learn something <br/>new everyday</h1>
+           <h1>Learn something new everyday</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
            <button>Start here</button>
        </div>
@@ -85,13 +91,49 @@
                 
              </div>
         </div>
-    </div>
-    
-<!--                   3rd Main Div                 -->
-   
-    <div class="container">
-        <h1 id="center">Start learning</h1>
         
+<!--       2nd Div Mobile Tiles     -->
+   
+           <div class="mobile-tiles">
+               <div class="mobile-tile">
+                <img src="images/information-orientation-mobile.jpg">
+                <div class="content">
+                <h3>Orientation date</h3>
+                <p>Tue 10/11 & Wed 10/12: 8 am-3pm</p>
+                <a href="">Read More</a>
+                </div>
+                
+            </div>
+              <div class="mobile-tile">
+                <img src="images/information-campus-mobile.jpg">
+                <div class="content">
+                <h3>Our campus</h3>
+                <p>Find which campus is close by you</p>
+                 <a href="">Read More</a>
+                 </div>
+                
+            </div>
+              <div class="mobile-tile">
+                <img src="images/information-guest-lecture-mobile.jpg">
+                <div class="content">
+                <h3>Our guest lecturer</h3>
+                <p>Join a keynote with Oliver Sack about music in medi</p>
+                 <a href="">Read More</a>
+                 </div>
+                
+            </div>
+           
+    </div>
+</div>
+<!--                   3rd Main Div                 -->
+<!--    <div class="container">-->
+
+ <div class="container">
+       <h1 class="mobile-h1">Start Learning</h1>
+</div>
+        
+    <div class="container supporting">
+            
         <div class="courses-container">
            
             <div class="course">
@@ -132,11 +174,25 @@
             </div>
             
         </div>
+        
+        <div class="mobile-courses">
+         
+            <ul style="padding-left:0">
+                <li>Software engineering</li>
+                <li>Computer art</li>
+                <li>Design</li>
+                <li>Data</li>
+                <li>Business</li>
+                <li>Marketing</li>
+            </ul>
+        </div>
     </div>
     
 <!--               4th main div          -->
-    
-     <div class="container supporting">
+    <div class="container">
+       <h1 class="mobile-h1">Thesis exhibit</h1>
+    </div>
+     <div class="container supporting"> 
         <div class="img-holder">
             <video src="videos/thesis.mp4" controls="" autoplay="yes"></video>
             <div class="caption">
@@ -169,13 +225,20 @@
     
 <!--       FOOTER       -->
    
-   <footer class="container">
+   <div class="container">
+   <footer class="desktop-footer">
        <span><i class="fa  fa-copyright"></i>2016 Copyright Colmar Academy. All rights reserved</span>
        <div>
            <a href="">Terms</a>
            <a href="">Privacy</a>
        </div>
    </footer>
+   </div>
+   <div class="container">
+   <footer class="mobile-footer">
+       <span><i class="fa  fa-copyright"></i>2016 Copyright Colmar Academy. All rights reserved</span>
+   </footer>
+        </div>
     
     
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
