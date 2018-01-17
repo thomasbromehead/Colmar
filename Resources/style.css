@@ -4,7 +4,6 @@ html{
 
 .container{
     width:1100px;
-    border:5px solid orange;
     overflow: hidden;
     margin:0 auto;
   
@@ -72,12 +71,11 @@ header p span{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid black;
     padding:0 3rem;
     height:8rem;
     font-family:Montserrat;
     font-size:2.75rem;
-    background-color:aliceblue;
+    
  }
 
 #mobile-menu{
@@ -87,8 +85,9 @@ header p span{
 #desktop-menu ul li{
     display:inline;
     margin-left:2rem;
-    border:2px dotted red;
+   
 }
+
 
 /*   footer  */
 footer{
@@ -109,14 +108,16 @@ i{
     padding-right:1rem;
 }
 
+.mobile-footer{
+    display:none;
+}
+
 .mobile-courses{
     display:none;
 }
-@media screen and (min-width:650px){
-footer.mobile-footer{
-    display:none;
-    }
-}
+
+
+
 /*1st main div*/
 
 
@@ -133,23 +134,28 @@ footer.mobile-footer{
 }
 
 .img-holder{
-    width:60%;
-    border:5px solid green;
+    width:60%;    
     height:auto;
     overflow:hidden;
-    float:left;
     display:flex;
     flex-direction:column;
     margin:4rem 3rem 4rem 3rem;
+    
     }
+
 
 .img-holder img{
     width:100%;
     height:auto;
+    transition-delay: 3000;
+    opacity:1;
+    transition: opacity 2000ms 300ms;
+    
 }
 
 .img-holder img:hover{
     opacity:0.5;
+   
 }
 
 .img-holder p{
@@ -157,7 +163,7 @@ footer.mobile-footer{
 }
 
 .info{
-    border:2px dashed blue;
+  
     width:40%;
     display:flex;
     flex-direction: column;
@@ -180,23 +186,33 @@ button{
     font-family:Oswald;
     font-size:3rem;
     border-radius: 1rem;
+    transition: all 1s linear;
     
 }
 
-.caption{
-    display:none;
-   
+button:hover{
+    background-color:azure;
+    color:black;
+    width:55%;
+    height:10rem;
+    border-radius:25rem;
+    box-shadow: 5px 10px #888888;
+    
 }
+
 
 /*2nd Main Div*/
 
 .info-2{
-    border:2px dashed blue;
     width:40%;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-top:4rem;
+}
+
+.caption{
+    margin-top:2rem;
 }
 
 .mobile-tiles{
@@ -208,7 +224,7 @@ button{
 }
 
 .tiles{
-    border:2px solid black;
+
     height:auto;
     display:flex;
     width:100%;
@@ -219,7 +235,7 @@ button{
 .tiles img{
     width:35%;
     height:auto;
-    border:1px solid red;
+   
     margin: 2rem 2rem;
     
 }
@@ -246,10 +262,10 @@ button{
 }
 /*3rd main div*/
 
-h1.container{
+.container>h1{
     margin:4rem 0;
     text-align: center;
-   
+  
 }
 
 
@@ -259,13 +275,11 @@ h1.container{
     justify-content: center;
     padding-left: 9rem;
     padding-right: 9rem;
-    border:2px dotted black;
     }
 
 .course{
     display:flex;
     flex-direction:column;
-    border:2px solid green;
     width:30%;
     margin-bottom:2rem;
 }
@@ -302,6 +316,16 @@ video{
     background-color: rgba(224,224,224,1);
 }
 
+.description h3{
+      margin:3rem 0 1rem 0;
+       
+    }
+
+.description p{
+    margin:0 0;
+    
+}
+
 
 
 /*Mobile Rules*/
@@ -309,9 +333,7 @@ video{
 @media only screen and (max-width:850px){
   
     .container{
-        width:95%;
-        border:1px solid orange;
-        display:flex;
+        width:95%;s display:flex;
         flex-direction: column;
         align-items:center;
     }
@@ -341,7 +363,6 @@ video{
     .supporting, .supporting-1{
         flex-direction:column;
         align-items:center;
-        border:5px solid black;
         margin:0 auto;
           }
         
@@ -375,12 +396,15 @@ video{
     }
     
 /*    2nd Main Div*/
-    .img-holder:nth-of-type(n){
-        
+    
+    
+    
+   .supporting .img-holder:nth-of-type(0){
+        display:none;
     }
     
     .caption{
-        padding-left:2rem;
+/*        display:none;*/
     }
     
     .info-2{
@@ -395,6 +419,7 @@ video{
         width:100%;
         margin-left:2rem;
         margin-right:2rem;
+        padding-top:2rem;
         
         
     }
@@ -402,7 +427,6 @@ video{
     .mobile-tile{
         display:flex;
         flex-direction:column;
-        border:3px dashed green;
         width:80%;
     }
     
@@ -412,7 +436,7 @@ video{
 
     }
     
-    .mobile-tile .content{     border:3px solid blue;
+    .mobile-tile .content{  
         margin-bottom:4rem;
         padding-top:1rem;
      
@@ -431,12 +455,15 @@ video{
     }
     
 /*    3rd Main Div*/
+
     
-    .mobile-h1{
+    .container>h1{
         margin-top:4rem;
-        margin-bottom:2rem;
+        margin-bottom:4rem;
         width:100%;
-        text-align: center;
+       
+
+      
       
     }
     
@@ -445,7 +472,6 @@ video{
     }
     
     .mobile-courses{
-        border:5px solid orange;
         padding-left:0;
     }
     .mobile-courses ul{
@@ -476,14 +502,18 @@ video{
     
 /*    4th Main Div is an image holder, rule already defined above*/
     
-    .caption{
+    .description{
         display:none;
     }
 
 /*    FOOTER     */
     
-    footer.desktop-footer{
+   .desktop-footer{
         display:none;
+    }
+    
+    .mobile-footer{
+        display:flex;
     }
     
     footer.mobile span{
@@ -491,8 +521,7 @@ video{
         margin:0;
        
     }
-    
-    
+   
     
    
     
