@@ -169,11 +169,12 @@ footer.mobile-footer{
 .info h1, .info p{
     margin-bottom: 4rem;
     text-align: left;
+    width:80%;
 }
 
 button{
     padding: 1rem 0;
-    width:60%;
+    width:70%;
     background-color:#4a4a4a;
     color:white;
     font-family:Oswald;
